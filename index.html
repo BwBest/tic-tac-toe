@@ -7,30 +7,40 @@
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./game.js" defer></script>
+    <script src="https://kit.fontawesome.com/aa92680613.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
+    <h1 id="title">Tic Tac Toe</h1>
     <div id="game">
-        <div id="player1">
-            <h3>Player 1</h3>
-            <h2>PLAYERNAME</h4>
-            <h2>O</h2>
+        <div id="player1" class="player-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+            <div class="center">
+                <h5>Player 1</h5>
+                <h2>Player Name</h2>
+            </div>
+            <h2>X</h2>
         </div>
         <div id="game-board">
-            <div id="box1"></div>
-            <div id="box2"></div>
-            <div id="box3"></div>
-            <div id="box4"></div>
-            <div id="box5"></div>
-            <div id="box6"></div>
-            <div id="box7"></div>
-            <div id="box8"></div>
-            <div id="box9"></div>
+            <div id="box1" class="box">X</div>
+            <div id="box2" class="box">X</div>
+            <div id="box3" class="box">X</div>
+            <div id="box4" class="box">O</div>
+            <div id="box5" class="box">O</div>
+            <div id="box6" class="box">X</div>
+            <div id="box7" class="box">X</div>
+            <div id="box8" class="box">O</div>
+            <div id="box9" class="box">X</div>
         </div>
-        <div id="player2">
-            <h3>Player 2</h3>
-            <h2>PLAYERNAME</h4>
-            <h2>X</h2>
+        <div id="player2" class="player-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+            <div class="center">
+                <h5>Player 2</h5>
+                <h2>Computer</h2>
+            </div>
+            <h2>O</h2>
         </div>
     </div>
 </body>
