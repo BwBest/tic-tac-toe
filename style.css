@@ -119,3 +119,52 @@ h2{
 #box8{
     border-bottom-right-radius: 25px;
 }
+
+#modal{
+    position: absolute;
+    background: rgba(60, 17, 140, 0.7);
+    backdrop-filter: blur(3px);
+    height: 300px;
+    width: 300px;
+
+    border-radius: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 10;
+}
+
+#modal-text{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2rem;
+    text-align: center;
+}
+
+#restart-game{
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 40px;
+    background: var(--accent-color);
+    color: black;
+
+    font-size: 1rem;
+}
+
+#restart-game:hover{
+    transform: scale(1.05);
+}
+
+#bg-block{
+    background: rgba(10,10,10,0.5);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.hide{
+    visibility: hidden;
+}
